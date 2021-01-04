@@ -1,0 +1,6 @@
+D:\REKRUTACJA\Projekt_C#\Iterative_computation\bin\Debug\Iterative_computation.exe.config
+D:\REKRUTACJA\Projekt_C#\Iterative_computation\bin\Debug\Iterative_computation.exe
+D:\REKRUTACJA\Projekt_C#\Iterative_computation\bin\Debug\Iterative_computation.pdb
+D:\REKRUTACJA\Projekt_C#\Iterative_computation\obj\Debug\Iterative_computation.csprojAssemblyReference.cache
+D:\REKRUTACJA\Projekt_C#\Iterative_computation\obj\Debug\Iterative_computation.exe
+D:\REKRUTACJA\Projekt_C#\Iterative_computation\obj\Debug\Iterative_computation.pdb
