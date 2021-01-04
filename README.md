@@ -1,2 +1,2 @@
-# Analiza_Szeregu_pot-gowego
+# Analiza_Szeregu_Potęgowego
 Dokumentacja w trakcie realizacji
