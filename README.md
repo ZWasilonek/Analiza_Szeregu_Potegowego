@@ -5,9 +5,9 @@
 Jest to responsywny program konsolowy napisanym w języku C#. Algorytm projektu wylicza sumę zadanego szeregu dla zmiennej niezależnej X, sumę szeregu w przedziale Xd(X dolne) – Xg(X górne) oraz pierwiastek kwadratowy z sumy k-tego wyrazu szeregu liczony metodą Herona oraz Newtona.
 Program dokonuje obliczeń na zadanym szeregu o wzorze :
 
-  ∞    2^n + n^2
-  ∑   ----------- X^n
- n=1   3^n + n^3
+  ∞    2^n + n^2 <br />
+  ∑   ----------- X^n <br />
+ n=1   3^n + n^3 <br />
 
 gdzie ^ oznacza potęge
 
@@ -49,16 +49,16 @@ Za każdym razem, gdy użytkownik wprowadzi dane, które będą niezgodne z wymo
   2. wartość dokładności obliczeń Eps, która ma wyznaczony zakres wartości **Eps ∈ (0; 1)**
 
 ### Warunki logiczne:
-  1. Wartość zmiennej niezależnej X musi był liczbą rzeczywistą należącą do przedziału:
-    * X ∈ < -4/3, 4/3 )
-    * float X → X >= -4/3 && X < 4/3
+  1. Wartość zmiennej niezależnej X musi był liczbą rzeczywistą należącą do przedziału: <br />
+    X ∈ < -4/3, 4/3 ) <br />
+    float X → X >= -4/3 && X < 4/3
 
-  2. Wartość dokładności obliczeń Eps jest liczbą zmiennoprzecinkową, należącą do przedziału: 
-    * Eps ∈ (0; 1)
-    * float Eps → Eps > 0 && Eps < 1 
+  2. Wartość dokładności obliczeń Eps jest liczbą zmiennoprzecinkową, należącą do przedziału: <br />
+    Eps ∈ (0; 1) <br />
+    float Eps → Eps > 0 && Eps < 1 
 
-  3. Aby k-ty wyraz szeregu mógł zostać zsumowany, należy sprawdzić czy wartość bezwzględna k-tego wyrazu szeregu jest mniejsza od przyjętej wartości Eps 
-    * Math.Abs(W) < Eps 
+  3. Aby k-ty wyraz szeregu mógł zostać zsumowany, należy sprawdzić czy wartość bezwzględna k-tego wyrazu szeregu jest mniejsza od przyjętej wartości Eps  <br />
+    Math.Abs(W) < Eps 
 
 
 <br />
@@ -73,18 +73,19 @@ Za każdym razem, gdy użytkownik wprowadzi dane, które będą niezgodne z wymo
 Wylicza sumę szeregu, dla podanej zmiennej niezależnej X oraz dokładności obliczeń Eps.
 
 #### Warunki logiczne:
-  1. Wartość zmiennej niezależnej X musi był liczbą rzeczywistą należącą do przedziału:
-    * X ∈ < -4/3, 4/3 )
-    * float X → X >= -4/3 && X < 4/3
+  1. Wartość zmiennej niezależnej X musi był liczbą rzeczywistą należącą do przedziału: <br />
+    X ∈ < -4/3, 4/3 ) <br />
+    float X → X >= -4/3 && X < 4/3
 
-  2. Wartość dokładności obliczeń Eps jest liczbą zmiennoprzecinkową, należącą do przedziału: 
-    * Eps ∈ (0; 1)
-    * float Eps → Eps > 0 && Eps < 1 
+  2. Wartość dokładności obliczeń Eps jest liczbą zmiennoprzecinkową, należącą do przedziału: <br />
+    Eps ∈ (0; 1) <br />
+    float Eps → Eps > 0 && Eps < 1 
 
-  3. Aby k-ty wyraz szeregu mógł zostać zsumowany, należy sprawdzić czy wartość bezwzględna k-tego wyrazu szeregu jest mniejsza od przyjętej wartości Eps 
-    * Math.Abs(wyrazSzeregu) < Eps 
+  3. Aby k-ty wyraz szeregu mógł zostać zsumowany, należy sprawdzić czy wartość bezwzględna k-tego wyrazu szeregu jest mniejsza od przyjętej wartości Eps  <br />
+    Math.Abs(wyrazSzeregu) < Eps 
 
 <br />
+
 ### 2. Tablicowanie wartości zadanego szeregu potęgowego.
 #### Funkcjonalność ta przypisana jest do klawisza:
 - **B**. Tablicowanie wartości zadanego szeregu potęgowego.
@@ -113,6 +114,7 @@ Wylicza sumę szeregu, dla podanego przedziału wartości zmiennej niezależnej 
     * Math.Abs(wyrazSzeregu) < Eps 
     
 <br />
+
 ### 3. Tablicowanie wartości pierwiastka kwadratowego, obliczonego metodą Herona, z wartości zadanego szeregu potęgowego.
 #### Funkcjonalność ta przypisana jest do klawisza:
 - **C**. Tablicowanie wartości pierwiastka kwadratowego, obliczonego metodą Herona, z wartości zadanego szeregu potęgowego.
@@ -141,6 +143,7 @@ Tablicowanie wartości pierwiastka kwadratowego, obliczonego metodą Herona, z w
     * Math.Abs( liczbaHerona – liczbaTestowa ) > Eps
 
 <br />
+
 ### 4. Tablicowanie wartości n-tego pierwiastka, obliczonego metodą Newtona, z wartości zadanego szeregu potęgowego.
 Funkcjonalność ta przypisana jest do klawisza:
 - **D**. Tablicowanie wartości n-tego pierwiastka, obliczonego metodą Newtona, z wartości zadanego szeregu potęgowego.
