@@ -6,7 +6,7 @@ Jest to responsywny program konsolowy napisanym w języku C#. Algorytm projektu 
 Program dokonuje obliczeń na zadanym szeregu o wzorze :
 
   ∞ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2^n + n^2 <br />
-  ∑ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----------- X^n <br />
+  ∑ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-------------- &nbsp; X^n <br />
  n=1 &nbsp;&nbsp;&nbsp;3^n + n^3 <br />
 
 gdzie ^ oznacza potęge
