@@ -45,8 +45,10 @@ Za każdym razem, gdy użytkownik wprowadzi dane, które będą niezgodne z wymo
   5. wartość zmiennej **S** (suma szeregu), która będzie przechowywać łączną sumę obliczonych wyrazów zadanego szeregu
 
 ### Aby policzyć sumę szeregu, użytkownik musi najpierw wprowadzić następujące dane w podanej kolejności:
-  1. wartość zmiennej niezależnej X, której zakres nie może przekraczać wartości zbieżności szeregu **X ∈ < -4/3, 4/3 )**
-  2. wartość dokładności obliczeń Eps, która ma wyznaczony zakres wartości **Eps ∈ (0; 1)**
+  1. wartość zmiennej niezależnej X, której zakres nie może przekraczać wartości zbieżności szeregu <br />
+    **X ∈ < -4/3, 4/3 )**
+  2. wartość dokładności obliczeń Eps, która ma wyznaczony zakres wartości <br />
+    **Eps ∈ (0; 1)**
 
 ### Warunki logiczne:
   1. Wartość zmiennej niezależnej X musi był liczbą rzeczywistą należącą do przedziału: <br />
