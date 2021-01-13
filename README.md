@@ -5,8 +5,8 @@
 Jest to responsywny program konsolowy napisanym w języku C#. Algorytm projektu wylicza sumę zadanego szeregu dla zmiennej niezależnej X, sumę szeregu w przedziale Xd(X dolne) – Xg(X górne) oraz pierwiastek kwadratowy z sumy k-tego wyrazu szeregu liczony metodą Herona oraz Newtona.
 Program dokonuje obliczeń na zadanym szeregu o wzorze :
 
-  ∞ &nbsp;&nbsp;&nbsp;&nbsp;    2^n + n^2 <br />
-  ∑ &nbsp;&nbsp;&nbsp;&nbsp;  ----------- X^n <br />
+  ∞ &nbsp;&nbsp;&nbsp;    2^n + n^2 <br />
+  ∑ &nbsp;&nbsp;&nbsp;  ----------- X^n <br />
  n=1 &nbsp;&nbsp;&nbsp;   3^n + n^3 <br />
 
 gdzie ^ oznacza potęge
@@ -24,12 +24,12 @@ Po wybraniu istniejącej funkcjonalności z menu programu, użytkownik zostanie 
 
 ### 3. Wybrana Funkcjonalność
 Użytkownikowi zostaje wyświetlona informacja o tym, co należy zrobić aby uruchomić szukaną funkcjonalność. Postępując zgodnie z instrukcją, należy wcisnąć odpowiedni klawisz odpowiadający wybranej funkcjonalności. <br />
-**WĄTEK Z BŁĘDEM:**
+**WĄTEK Z BŁĘDEM:** <br />
 Jeżeli użytkownik wciśnie klawisz, do którego żadna funkcjonalność nie została przypisana, zostanie wyświetlony mu komunikat błędu oraz instrukcja sterująca - jak użytkownik ma postąpić dalej.
 
 ### 4. Instrukcja sterująca funkcjonalności
 Po wybraniu istniejącej funkcjonalności, algorytm będzie komunikował się z użytkownikiem. Użytkownik zostanie poproszony o sprecyzowane dane, jakie będą konieczne do obliczenia wybranej funkcjonalności. <br />
-**WĄTEK Z BŁĘDEM:**
+**WĄTEK Z BŁĘDEM:** <br />
 Za każdym razem, gdy użytkownik wprowadzi dane, które będą niezgodne z wymogami algorytmu, zostanie mu wyświetlony komunikat błędu oraz instrukcja sterująca – jak ma dalej postępować.
 
 
@@ -145,7 +145,7 @@ Tablicowanie wartości pierwiastka kwadratowego, obliczonego metodą Herona, z w
 <br />
 
 ### 4. Tablicowanie wartości n-tego pierwiastka, obliczonego metodą Newtona, z wartości zadanego szeregu potęgowego.
-Funkcjonalność ta przypisana jest do klawisza:
+**Funkcjonalność ta przypisana jest do klawisza:**
 - **D**. Tablicowanie wartości n-tego pierwiastka, obliczonego metodą Newtona, z wartości zadanego szeregu potęgowego.
 
 #### Zadanie: 
