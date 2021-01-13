@@ -1,16 +1,18 @@
-# Analiza_Szeregu_Potęgowego
+# Analiza Szeregu Potęgowego
+<br />
 
 ## I. OGÓLNE ZAŁOŻENIA PROGRAMU
 Jest to responsywny program konsolowy napisanym w języku C#. Algorytm projektu wylicza sumę zadanego szeregu dla zmiennej niezależnej X, sumę szeregu w przedziale Xd(X dolne) – Xg(X górne) oraz pierwiastek kwadratowy z sumy k-tego wyrazu szeregu liczony metodą Herona oraz Newtona.
 Program dokonuje obliczeń na zadanym szeregu o wzorze :
 
-#  ∞    2^n + n^2
-#  ∑   ----------- X^n
-# n=1   3^n + n^3
+  ∞    2^n + n^2
+  ∑   ----------- X^n
+ n=1   3^n + n^3
 
 gdzie ^ oznacza potęge
 
 
+<br />
 
 ## II. ZAPOZNANIE Z DZIAŁANIEM PROGRAMU
 
@@ -31,6 +33,7 @@ Po wybraniu istniejącej funkcjonalności, algorytm będzie komunikował się z 
 Za każdym razem, gdy użytkownik wprowadzi dane, które będą niezgodne z wymogami algorytmu, zostanie mu wyświetlony komunikat błędu oraz instrukcja sterująca – jak ma dalej postępować.
 
 
+<br />
 
 ## III. ANALIZA SZEREGU:
 
@@ -47,17 +50,18 @@ Za każdym razem, gdy użytkownik wprowadzi dane, które będą niezgodne z wymo
 
 ### Warunki logiczne:
   1. Wartość zmiennej niezależnej X musi był liczbą rzeczywistą należącą do przedziału:
-    X ∈ < -4/3, 4/3 )
-    float X → X >= -4/3 && X < 4/3
+    * X ∈ < -4/3, 4/3 )
+    * float X → X >= -4/3 && X < 4/3
 
   2. Wartość dokładności obliczeń Eps jest liczbą zmiennoprzecinkową, należącą do przedziału: 
-    Eps ∈ (0; 1)
-    float Eps → Eps > 0 && Eps < 1 
+    * Eps ∈ (0; 1)
+    * float Eps → Eps > 0 && Eps < 1 
 
   3. Aby k-ty wyraz szeregu mógł zostać zsumowany, należy sprawdzić czy wartość bezwzględna k-tego wyrazu szeregu jest mniejsza od przyjętej wartości Eps 
-    Math.Abs(W) < Eps 
+    * Math.Abs(W) < Eps 
 
 
+<br />
 
 ## IV. RODZAJE FUNKCJONALNOŚCI
 
@@ -70,16 +74,17 @@ Wylicza sumę szeregu, dla podanej zmiennej niezależnej X oraz dokładności ob
 
 #### Warunki logiczne:
   1. Wartość zmiennej niezależnej X musi był liczbą rzeczywistą należącą do przedziału:
-    X ∈ < -4/3, 4/3 )
-    float X → X >= -4/3 && X < 4/3
+    * X ∈ < -4/3, 4/3 )
+    * float X → X >= -4/3 && X < 4/3
 
-  2. Wartość dokładności obliczeń Eps jest liczbą zmiennoprzecinkową, należącą do przedziału: Eps ∈ (0; 1)
-    float Eps → Eps > 0 && Eps < 1 
+  2. Wartość dokładności obliczeń Eps jest liczbą zmiennoprzecinkową, należącą do przedziału: 
+    * Eps ∈ (0; 1)
+    * float Eps → Eps > 0 && Eps < 1 
 
   3. Aby k-ty wyraz szeregu mógł zostać zsumowany, należy sprawdzić czy wartość bezwzględna k-tego wyrazu szeregu jest mniejsza od przyjętej wartości Eps 
-    Math.Abs(wyrazSzeregu) < Eps 
+    * Math.Abs(wyrazSzeregu) < Eps 
 
-
+<br />
 ### 2. Tablicowanie wartości zadanego szeregu potęgowego.
 #### Funkcjonalność ta przypisana jest do klawisza:
 - **B**. Tablicowanie wartości zadanego szeregu potęgowego.
@@ -89,25 +94,25 @@ Wylicza sumę szeregu, dla podanego przedziału wartości zmiennej niezależnej 
 
 #### Warunki logiczne:
   1. Wartość zmiennej niezależnej Xd musi był liczbą rzeczywistą należącą do przedziału:
-    Xd ∈ < -4/3, 4/3 )
-    float Xd → Xd >= -4/3 && Xd < 4/3
+    * Xd ∈ < -4/3, 4/3 )
+    * float Xd → Xd >= -4/3 && Xd < 4/3
 
   2. Wartość zmiennej niezależnej Xg musi był liczbą rzeczywistą większą lub równą wartości Xd, której wartość jednocześnie należy do przedziału:
-    Xg ∈ < Xd, 4/3 ) 
-    float Xg → Xg >= Xd  && Xg < 4/3
+    * Xg ∈ < Xd, 4/3 ) 
+    * float Xg → Xg >= Xd  && Xg < 4/3
 
   3. Wartość przyrostu h zmiennej niezależnej X, może być dowolną liczbą rzeczywistą mieszczącą się w zakresie:
-    h ∈ < Xd, Xg > 
-    float h → h <= Xd && h >= Xg
+    * h ∈ < Xd, Xg > 
+    * float h → h <= Xd && h >= Xg
 
   4. Wartość dokładności obliczeń Eps jest liczbą zmiennoprzecinkową, należącą do przedziału: 
-    Eps ∈ (0; 1)
-    float Eps → Eps > 0 && Eps < 1 
+    * Eps ∈ (0; 1)
+    * float Eps → Eps > 0 && Eps < 1 
 
   5. Aby k-ty wyraz szeregu mógł zostać zsumowany, należy sprawdzić czy wartość bezwzględna k-tego wyrazu szeregu jest mniejsza od przyjętej wartości Eps 
-    Math.Abs(wyrazSzeregu) < Eps 
+    * Math.Abs(wyrazSzeregu) < Eps 
     
-
+<br />
 ### 3. Tablicowanie wartości pierwiastka kwadratowego, obliczonego metodą Herona, z wartości zadanego szeregu potęgowego.
 #### Funkcjonalność ta przypisana jest do klawisza:
 - **C**. Tablicowanie wartości pierwiastka kwadratowego, obliczonego metodą Herona, z wartości zadanego szeregu potęgowego.
@@ -117,25 +122,25 @@ Tablicowanie wartości pierwiastka kwadratowego, obliczonego metodą Herona, z w
 
 #### Warunki logiczne:
   1. Wartość zmiennej niezależnej Xd musi był liczbą rzeczywistą należącą do przedziału:
-    Xd ∈ < -4/3, 4/3 )
-    float Xd → Xd > -4/3 && Xd <= 4/3
+    * Xd ∈ < -4/3, 4/3 )
+    * float Xd → Xd > -4/3 && Xd <= 4/3
 
   2. Wartość zmiennej niezależnej Xg musi był liczbą rzeczywistą większą lub równą wartości Xd, której wartość jednocześnie należy do przedziału:
-    Xg ∈ < Xd, 4/3 ) 
-    float Xg → Xg >= Xd  && Xg < 4/3
+    * Xg ∈ < Xd, 4/3 ) 
+    * float Xg → Xg >= Xd  && Xg < 4/3
 
   3. Wartość przyrostu h zmiennej niezależnej X, może być dowolną liczbą rzeczywistą mieszczącą się w zakresie:
-    h ∈ < Xd, Xg > 
-    float h → h <= Xd && h >= Xg
+    * h ∈ < Xd, Xg > 
+    * float h → h <= Xd && h >= Xg
 
   4. Wartość dokładności obliczeń Eps jest liczbą zmiennoprzecinkową, należącą do przedziału: 
-    Eps ∈ (0; 1)
-    float Eps → Eps > 0 && Eps < 1 
+    * Eps ∈ (0; 1)
+    * float Eps → Eps > 0 && Eps < 1 
 
   5. Aby uzyskać pierwiastek kwadratowy metodą Herona z sumy szeregu, należy spełnić warunek: 
-    Math.Abs( liczbaHerona – liczbaTestowa ) > Eps
+    * Math.Abs( liczbaHerona – liczbaTestowa ) > Eps
 
-
+<br />
 ### 4. Tablicowanie wartości n-tego pierwiastka, obliczonego metodą Newtona, z wartości zadanego szeregu potęgowego.
 Funkcjonalność ta przypisana jest do klawisza:
 - **D**. Tablicowanie wartości n-tego pierwiastka, obliczonego metodą Newtona, z wartości zadanego szeregu potęgowego.
@@ -145,20 +150,20 @@ Tablicowanie wartości n-tego pierwiastka, obliczonego metodą Newtona, z warto�
 
 #### Warunki logiczne:
   1. Wartość zmiennej niezależnej Xd musi był liczbą rzeczywistą należącą do przedziału:
-    Xd ∈ < -4/3, 4/3 )
-    float Xd → Xd > -4/3 && Xd <= 4/3
+    * Xd ∈ < -4/3, 4/3 )
+    * float Xd → Xd > -4/3 && Xd <= 4/3
 
   2. Wartość zmiennej niezależnej Xg musi był liczbą rzeczywistą większą lub równą wartości Xd, której wartość jednocześnie należy do przedziału:
-    Xg ∈ < Xd, 4/3 ) 
-    float Xg → Xg >= Xd  && Xg < 4/3
+    * Xg ∈ < Xd, 4/3 ) 
+    * float Xg → Xg >= Xd  && Xg < 4/3
 
   3. Wartość przyrostu h zmiennej niezależnej X, może być dowolną liczbą rzeczywistą mieszczącą się w zakresie:
-    h ∈ < Xd, Xg > 
-    float h → h <= Xd && h >= Xg
+    * h ∈ < Xd, Xg > 
+    * float h → h <= Xd && h >= Xg
 
   4. Wartość dokładności obliczeń Eps jest liczbą zmiennoprzecinkową, należącą do przedziału: 
-    Eps ∈ (0; 1)
-    float Eps → Eps > 0 && Eps < 1 
+    * Eps ∈ (0; 1)
+    * float Eps → Eps > 0 && Eps < 1 
     
   5. Aby uzyskać pierwiastek kwadratowy metodą Herona z sumy szeregu, należy spełnić warunek: 
-    Math.Abs( Xi – Xi - 1) > Eps
+    * Math.Abs( Xi – Xi - 1) > Eps
